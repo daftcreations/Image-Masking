@@ -1,0 +1,68 @@
+body{
+    margin:0px;
+    padding:0px;
+    background-color:darkturquoise;
+    overflow:hidden;
+}
+.main{
+    height: 500px;
+    width:500px;
+    display:block;
+    background-image:url('Mountain 3.jpg');
+    background-size:100% 100%;
+    background-attachment: fixed;
+    border-radius: 50%;
+    margin-left:30%;
+    margin-top:10%;
+    overflow: hidden;
+    z-index: 999;
+}
+.main::before{
+    content: '';
+    position: absolute;
+    height:10px;
+    width:350px;
+    background-color:black;
+    border-radius:50%;
+    top:87%;
+    left:35%;
+    -webkit-filter:blur(10px);
+    opacity:0.3;
+}
+.sub{
+    height: 75%;
+    width:75%;
+    display:block;
+    border-radius: 50%;
+    border:57px solid darkturquoise;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.img1,
+.img2,
+.img3{
+    position:absolute;
+    top:50%;
+    left:30%;
+    transform: translate(-50%,-50%);
+}
+.img2{
+    top:40%;
+    left:65%;
+}
+.img3{
+    top:70%;
+    left:50%;
+}
+.title{
+    font-family: Brandon Grotesque Thin;
+    font-size: 7rem;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:17%;
+    transform: translateY(-50%);
+    z-index:9999;
+}

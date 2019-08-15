@@ -1,0 +1,39 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.main{
+    height: 100%;
+    width:100%;
+    display:block;
+    background-image: url('Car.jpg');
+    background-size:100% 100%;
+    z-index: -1;
+}
+.content{
+    height: calc(100% - 200px);
+    width:40%;
+    display:block;
+    background-image:url('Car.jpg');
+    background-size:100% 100%;
+    background-attachment: fixed;
+    font-family: fantasy;
+    font-size: 10rem;
+    line-height: 140px;
+    text-align: right;
+    padding-top:200px;
+    padding-left:25px;
+    -webkit-background-clip:text;
+    color:transparent;
+    position: absolute;
+    z-index: 9999;
+}
+.colorLayer{
+    height: 100%;
+    width:40%;
+    background-color:#F7D200;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index:99;
+}

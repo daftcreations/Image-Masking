@@ -1,0 +1,27 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.main{
+    height: 100%;
+    width:100%;
+    display:block;
+    background-image:url('Mountain 1.jpg');
+    background-size:100% 100%;
+}
+.circle{
+    height:225px;
+    width:450px;
+    display:block;
+    position:absolute;
+    background-image: url('Mountain 1.jpg');
+    background-size:100% 100%;
+    background-attachment: fixed;
+    border-radius: 0px 0px 225px 225px;
+    transform: rotate(180deg);
+    left:30%;
+    top:20%;
+    -webkit-mask-image:-webkit-gradient(linear,center top,center bottom,
+    color-stop(0.00,rgba(0,0,0,0)),
+    color-stop(1.00,rgba(0,0,0,1)));
+}
